@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Fira Sans', Arial, sans-serif;
+  background-color: #FFF;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo h1 {
+  font-size: 24px;
+}
+
+.didi {
+  height: 80px;
+  width: 80px;
+}
+
+.logofoto {
+  height: 100px;
+  width: 100px;
+}
+
+.logo h1 {
+  font-size: 24px;
+}
+
+.search-bar {
+  flex-grow: 1;
+  margin: 0 20px;
+  display: flex;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.header-icons a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+nav {
+  background-color: #f8f8f8;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding: 5px;
+  transition: color 0.3s ease;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.location button {
+  padding: 5px 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.principal{
+  color:#FFF;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #000;
+  text-decoration: none;
+}
+a.principal:hover {
+  background-color: #363636;
+}
+
+.category-items {
+  display: flex;
+  gap: 65px;
+  margin-top: 15px;
+  margin-left: 20px;
+  background-color: #f7f7f7;
+}
+
+nav ul li a:hover {
+  color: gray;
+  transform: scale(1.05);
+}
+button:hover {
+  background-color: #363636;
+}
+
+.backgroud {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  border: solid 2px #f7f7f7;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.backgroud img {
+  width: 300px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.backgroud h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.cor{
+  font-size: 24px; 
+  font-weight: bold;
+   color: #000;
+}
+button{
+  background-color: #000; 
+  color: white; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.frete-calculo {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.frete-calculo label {
+  font-size: 14px;
+  color: #333;
+}
+
+.frete-calculo input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 40px;
+  width: 150px;
+}
+
+.frete-calculo button {
+  padding: 5px 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.frete-calculo button:hover {
+  background-color: #363636;
+}
+
+
+@media (max-width: 768px) {
+  
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .logo {
+    text-align: center;
+    width: 100%;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin: 0;
+  }
+
+  .header-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+  }
+
+  .category-items {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .location {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
+@media (max-width: 480px) {
+  .backgroud {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .backgroud img {
+    width: 80%; /* Reduzindo a largura da imagem */
+  }
+
+  .conteudo {
+    margin-top: 20px;
+  }
+
+  .conteudo h1 {
+    font-size: 20px;
+  }
+
+  .conteudo .cor {
+    font-size: 18px;
+  }
+
+  .location {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
+    text-align: center; 
+  }
+  
+  .principal {
+    padding: 10px 20px; 
+    text-decoration: none; 
+    font-size: 16px; 
+  }
+  
+
+  .frete-calculo {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .frete-calculo input {
+    width: 100%;
+  }
+
+  .frete-calculo button {
+    width: 100%;
+  }
+
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .search-bar input,
+  .search-bar button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+
